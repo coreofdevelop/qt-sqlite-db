@@ -13,8 +13,11 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr, QString name = "DataBaseStore");
     ~MainWindow();
+public:
+    void saveSettings();
+    void loadSettings();
 
 private:
     Ui::MainWindow *ui;
