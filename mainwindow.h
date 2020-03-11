@@ -21,6 +21,6 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QSettings* settings;
+    QSettings* settings;        // Добавляем экземпляр класса в класс нашей главной формы
 };
 #endif // MAINWINDOW_H
